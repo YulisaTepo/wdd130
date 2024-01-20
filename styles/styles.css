@@ -13,7 +13,7 @@ h1 {
     color: steelblue;
 }
 
-img {
+main    img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -22,5 +22,35 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 2px solid rgba(44, 153, 241, 0.692);
+    padding: 1rem;
+    background-color: rgba(122, 185, 236, 0.856);
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+aside h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer{
+    margin-top: 15px;
+    border-top: 2px dotted rgba(44, 153, 241, 0.692);
+    text-align: center;
 }
