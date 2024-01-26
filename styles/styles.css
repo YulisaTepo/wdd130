@@ -1,16 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: black;
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: steelblue;
+    color: black;
+    padding: 10px;
 }
 
 main    img {
@@ -22,11 +29,17 @@ main    img {
 }
 
 p {
-    padding: 0;
+    padding: 10px;
 }
 
 main {
     max-width: 840px;
+}
+main img {
+    float: right;
+}
+main p {
+    overflow: scroll;
 }
 
 aside {
@@ -42,6 +55,7 @@ aside {
 aside h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
+    position: relative;
 }
 
 aside img {
@@ -51,6 +65,25 @@ aside img {
 
 footer{
     margin-top: 15px;
-    border-top: 2px dotted rgba(44, 153, 241, 0.692);
+    border-top: 2px dotted black;
     text-align: center;
 }
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: steelblue;
+    color: black;
+}
+
+aside {
+    position: relative;
+}
+
+a {
+    color: black;
+}
+
+
