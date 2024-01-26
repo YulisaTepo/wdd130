@@ -39,7 +39,7 @@ div.hero {
     height: auto;
     padding: 0;
 }
-.employee img {
+#employee img {
     width: 150px;
     float: right;
 }
