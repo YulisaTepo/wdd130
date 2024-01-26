@@ -79,7 +79,7 @@ footer{
 }
 
 aside {
-    position: relative;
+    position: absolute;
 }
 
 a {
