@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Permanent+Marker&display=swap');
+/* :root {
+    --primary-color: #219EBC;
+    --secondary-color: #023047; 
+    --accent1-color: #FFB703;
+    --accent2-color: #FB8500;
+
+    --heading-font: 'permanent marker', serif;
+    --paragraph-font: 'alegreya sans', serif;
+
+    --nav-background-color: #023047;
+    --nav-link-color: #0000;
+    --nav-hover-link-color: #ff1d1d;
+    --nav-hover-background-color: #fff12d;
+} */
+
+.hero h1{
+    font-family: permanent marker;
+    color: #FFB703;
+    position: absolute;
+    top: 480px;
+    left: 300px;
+
+}
+article {
+    position: absolute;
+}
+.intro a {
+    color: #FB8500;
+}
+p, footer {
+    font-family: "cambria";
+}
+section h2 {
+    font-family: "serif";
+    color: #FFB703;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+div.content {
+    width: 1000px;
+}
+
+div.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.employee img {
+    width: 150px;
+    float: right;
+}
+
+.history {
+    position: relative;
+}
