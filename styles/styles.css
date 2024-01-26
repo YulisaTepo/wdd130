@@ -51,11 +51,14 @@ aside {
     color: black;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
 }
 aside h2 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    position: relative;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 128px;
 }
 
 aside img {
@@ -73,13 +76,9 @@ footer{
 .box {
     margin: 1rem;
     border: 1px solid black;
-    padding: 1rem;
+    padding: 2rem;
     background-color: steelblue;
     color: black;
-}
-
-aside h2{
-    position: absolute;
 }
 
 a {
