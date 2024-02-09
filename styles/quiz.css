@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Signika&display=swap');
+
+main
+.box {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, 0.644);
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 100px;
+
+}
+
+.box p {
+    color: white;
+    font-size: 25px;
+}
+
+.quiz {
+    width: 600px;
+    justify-content: center;
+    background-color: rgba(236, 236, 236, 0.863);
+    padding: 25px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: black;
+    padding-left: 25px;
+}
+
+strong {
+    color: rgb(4, 45, 158);
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    font-size: 25px;
+}
+
+textarea {
+    width: 500px;
+    height: 80px;
+    font-size: 25px;
+}
+
+select,
+option {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(4, 45, 158);
+    font-size: 25px;
+    width: 507px;
+    height: 50px;
+}
