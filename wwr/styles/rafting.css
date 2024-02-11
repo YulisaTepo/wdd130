@@ -309,3 +309,14 @@ input.little-box {
     width: 22px;
     
 }
+textarea {
+    width: 500px;
+    height: 80px;
+    font-size: 25px;
+}
+legend {
+    font-size: 20px;
+}
+input.radios {
+    width: 20px;
+}
