@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Signika&display=swap');
 :root {
     --primary-color: #219EBC;
-    --secondary-color: #023047; 
+    --secondary-color: #023047;
     --accent1-color: #FFB703;
     --accent2-color: #FB8500;
 
@@ -15,9 +15,9 @@
     --nav-hover-background-color: #fff12d;
 }
 
-.hero h1{
+.hero h1 {
     font-family: orbitron;
-    color: #FFB703;
+    color: var(--accent1-color);
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -34,9 +34,10 @@ p {
     font-family: "cambria";
     font-size: 20px;
 }
+
 section h2 {
     font-family: "serif";
-    color: #FFB703;
+    color: var(--accent1-color);
 }
 
 body {
@@ -47,6 +48,7 @@ body {
     width: 150px;
     float: right;
 }
+
 .rafting {
     width: 1000px;
     border: 2px solid var(--secondary-color);
@@ -60,6 +62,7 @@ body {
     padding: 20px;
     width: 1000px;
 }
+
 .history h2 {
     text-align: center;
     grid-column: 1/4;
@@ -71,24 +74,27 @@ body {
     margin-left: 40px;
     margin-top: 18px;
 }
-.history p{
-    padding: 20px;   
+
+.history p {
+    padding: 20px;
 }
 
 section {
     width: 1040px;
 }
+
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 190px);
-    /* width: 1600; */
     padding: 0;
     border: 2px solid var(--secondary-color);
 }
+
 .adventures h2 {
     grid-column: 1/6;
     text-align: center;
 }
+
 .adventures img {
     display: flex;
     justify-content: flex-start;
@@ -100,6 +106,7 @@ figure {
     flex-flow: column;
     font-size: larger;
     width: 160px;
+    text-align: center;
 }
 
 .p1 {
@@ -109,6 +116,7 @@ figure {
     padding: 10px;
 
 }
+
 .p2 {
     grid-column: 3;
     grid-row: 2;
@@ -119,11 +127,11 @@ figure {
 header {
     display: flex;
     margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 300px 700px;
+    display: grid;
+    grid-template-columns: 300px 700px;
     grid-template-rows: 1fr;
-	align-items: center;
- 	max-width: 1000px;
+    align-items: center;
+    max-width: 1000px;
     justify-content: stretch;
     padding: 20px;
     width: 1000px;
@@ -133,10 +141,10 @@ header {
 .navigation a {
     background-color: var(--accent1-color);
     display: block;
-	text-decoration: none;
+    text-decoration: none;
     padding: 5px;
     width: 120px;
-    border:  2px solid #FB8500;
+    border: 2px solid var(--accent1-color);
     color: black;
     text-decoration: none;
     font-size: larger;
@@ -148,21 +156,20 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-	list-style: none;
+    list-style: none;
     grid-column: 2;
-    
 }
 
 .navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .logo {
-	margin-left: 80px;
-	width: 150px;
-	height: auto;
+    margin-left: 80px;
+    width: 150px;
+    height: auto;
 }
 
 footer {
@@ -171,14 +178,134 @@ footer {
     width: 1040px;
     border: 2px solid var(--secondary-color);
 }
+
 footer p {
     text-align: center;
     margin-left: 100px;
     grid-column: 1/2;
 }
+
 footer img {
     padding: 10px;
     width: 40px;
     display: flex;
     grid-column: 2/3;
+}
+
+.front {
+    padding: 0;
+    color: black;
+    width: 1040px;
+    height: 450px;
+    background-image: url("https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting13_1024.jpg");
+    border: 2px solid black;
+}
+
+.front h1 {
+    color: var(--accent1-color);
+    display: flex;
+    width: 400px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 320px;
+    font-family: "orbitron";
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    width: 1020px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--accent1-color);
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 190px);
+    grid-template-rows: 50px 300px;
+    padding: 0;
+    border: 2px solid var(--secondary-color);
+    justify-content: center;
+}
+
+.employees h2 {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Signika&display=swap');
+
+main .box {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, 0.644);
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.box p {
+    color: white;
+    font-size: 25px;
+}
+
+.quiz {
+    display: flex;
+    width: 510px;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 190px;
+}
+.quiz h1 {
+    text-align: center;
+}
+
+
+h1 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: black;
+    padding-left: 25px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    width: 500px;
+    height: 28px;
+    font-size: 20px;
+}
+
+select,
+option {
+    width: 500px;
+    height: 28px;
+    font-size: 20px;
+}
+
+button {
+    background-color: var(--accent1-color);
+    font-size: 25px;
+    width: 507px;
+    height: 50px;
+}
+input.little-box {
+    width: 22px;
+    
 }
