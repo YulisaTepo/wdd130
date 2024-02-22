@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Signika:wght@300&display=swap');
+
 :root {
     --primary-color: #219EBC;
     --secondary-color: #023047;
@@ -15,7 +16,24 @@
     --nav-hover-background-color: #fff12d;
 }
 
-.hero h1 {
+/* RESPONSIVE */
+html {
+    height: 100%;
+}
+
+.main-conteiner {
+    text-align: center;
+    justify-content: center;
+}
+
+.rafting {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.rafting h1 {
     font-family: orbitron;
     color: var(--accent1-color);
     font-size: 40px;
@@ -25,13 +43,22 @@
 
 .text-1 {
     width: 950px;
-    height: 250px;
-    border: 2px solid var(--secondary-color);
+    height: 350px;
+    border-bottom: 5px solid var(--accent1-color);
     padding: 20px;
+    border-top: 5px solid var(--accent1-color);
+
+}
+
+.text-1 img {
+    margin: 15px;
+    width: 200px;
+    float: right;
+    box-shadow: 0px 0px 15px;
 }
 
 p {
-    font-family: "cambria";
+    font-family: "quicksand";
     font-size: 20px;
 }
 
@@ -40,73 +67,63 @@ section h2 {
     color: var(--accent1-color);
 }
 
-body {
-    width: 1000px;
-}
-
-.text-1 img {
-    width: 150px;
-    float: right;
-}
-
-.rafting {
-    width: 1000px;
-    border: 2px solid var(--secondary-color);
-    padding: 20px;
-}
-
 .history {
-    border: 2px solid var(--secondary-color);
     display: grid;
     grid-template-columns: 400px 250px 400px;
-    padding: 20px;
-    width: 1000px;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 5px solid var(--accent1-color);
 }
 
 .history h2 {
     text-align: center;
     grid-column: 1/4;
+    font-family: orbitron;
 }
 
 .history img {
     width: 170px;
     height: auto;
     margin-left: 40px;
-    margin-top: 18px;
+    margin-top: 42px;
+    box-shadow: 0px 0px 15px;
+
 }
 
 .history p {
     padding: 20px;
+    font-family: "quicksand";
 }
 
-section {
-    width: 1040px;
-}
-
+/* ADVENTURES */
 .adventures {
     display: grid;
-    grid-template-columns: repeat(5, 190px);
-    padding: 0;
-    border: 2px solid var(--secondary-color);
+    grid-template-columns: repeat(5, 320px);
+    width: 100%;
+
 }
 
 .adventures h2 {
     grid-column: 1/6;
     text-align: center;
+    font-family: "orbitron";
+
 }
 
 .adventures img {
     display: flex;
-    justify-content: flex-start;
-    width: 180px;
+    justify-content: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px;
 }
 
-figure {
+.about-fig {
     display: flex;
     flex-flow: column;
     font-size: larger;
-    width: 160px;
+    width: 300px;
     text-align: center;
+    font-family: "quicksand";
 }
 
 .p1 {
@@ -114,7 +131,6 @@ figure {
     grid-row: 2;
     align-items: center;
     padding: 10px;
-
 }
 
 .p2 {
@@ -124,31 +140,46 @@ figure {
     padding: 10px;
 }
 
+/* HEADER */
 header {
     display: flex;
-    margin: 1rem auto;
     display: grid;
-    grid-template-columns: 300px 700px;
+    grid-template-columns: 30% 20% 50%;
     grid-template-rows: 1fr;
     align-items: center;
-    max-width: 1000px;
-    justify-content: stretch;
-    padding: 20px;
-    width: 1000px;
-    border: 2px solid var(--secondary-color);
+    justify-content: right;
+    width: 100%;
+    height: 165px;
+    position: static;
 }
 
+/* NAVIGATION */
 .navigation a {
     background-color: var(--accent1-color);
     display: block;
     text-decoration: none;
     padding: 5px;
-    width: 120px;
-    border: 2px solid var(--accent1-color);
+    width: 90px;
+    height: 25px;
+    border-radius: 8px;
     color: black;
     text-decoration: none;
     font-size: larger;
     font-family: var(--navigation-font);
+}
+
+.navigation a:hover {
+    background-color: var(--accent2-color);
+
+}
+
+nav.navigation {
+    grid-column: 3/4;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    border-radius: 2.5em;
+    margin-left: 100px;
 }
 
 nav {
@@ -160,50 +191,226 @@ nav {
     grid-column: 2;
 }
 
-.navigation a:hover {
-    color: tomato;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
+/* LOGO */
 .logo {
-    margin-left: 80px;
-    width: 150px;
+    display: flex;
+    justify-items: center;
+    margin-left: 25px;
+    width: 120px;
     height: auto;
 }
 
-footer {
+.logo-figure {
+    color: black;
+    width: 300px;
+    font-family: "orbitron";
+    text-align: left;
+}
+
+/* Principal big image */
+.big-img {
+    width: 100%;
+}
+
+.main-conteiner {
+    position: relative;
+    display: flex;
+}
+
+.main-conteiner h1 {
+    display: flex;
+    position: absolute;
+    font-family: "protest revolution";
+    color: black;
+    justify-content: center;
+    width: 100%;
+    font-size: 70px;
+    padding: 10px;
+    background-color: rgba(253, 253, 253, 0.575);
+}
+
+/* FORM FOR TRIPS */
+div.know-square {
+    display: flex;
     display: grid;
-    grid-template-columns: 850px 60px 60px 60px;
-    width: 1040px;
-    border: 2px solid var(--secondary-color);
+    grid-template-columns: 500px 100px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 800px;
+    background-color: white;
+}
+
+.know-square a {
+    color: black;
+    background-color: var(--accent2-color);
+    text-decoration: none;
+    font-size: 29px;
+    text-align: center;
+    font-family: "orbitron";
+    padding-top: 15px;
+    border-radius: 0 10px 10px 0px;
+}
+
+.know-square a:hover {
+    color: white;
+}
+
+.know-square h2 {
+    text-align: center;
+    font-family: "quicksand";
+}
+
+/* FORM FOR LOGIN UP */
+div.sign-up {
+    display: flex;
+    position: absolute;
+    margin-top: 300px;
+    background-color: rgba(255, 255, 255, 0.493);
+    width: 700px;
+    border-radius: 10px;
+    justify-content: center;
+    height: 400px;
+    font-size: 30px;
+}
+
+.sign-up h2 {
+    font-size: 45px;
+    color: black;
+    font-family: "orbitron";
+}
+
+.sign-up label {
+    font-family: "orbitron";
+}
+
+.sign-up input {
+    border-radius: 5px;
+    height: 33px;
+    font-family: "quicksand";
+}
+
+/* SEPARATOR */
+.separator p {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 28px;
+    padding: 30px;
+    font-family: "quicksand";
+    background-color: var(--accent2-color);
+}
+
+/* HOME GRID */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-grid img {
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 4px solid black;
+    margin-left: 75px;
+    border-radius: 5px;
+}
+
+.home-grid figure {
+    justify-content: center;
+    font-size: 25px;
+    width: 400px;
+    margin-left: 50px;
+    align-content: center;
+}
+
+.home-grid figcaption {
+    margin-left: 85px;
+    font-family: "quicksand";
+}
+
+/* Final Message */
+.main-img {
+    width: 50%;
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+.message {
+    position: relative;
+    display: flex;
+    background-image: url("images/adventure6.jpg");
+    background-color: #023047;
+}
+
+.message p {
+    display: flex;
+    position: absolute;
+    color: black;
+    justify-content: center;
+    font-size: 22px;
+    padding: 10px;
+    width: 410px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.582);
+    margin-left: 250px;
+    margin-top: 250px;
+    font-family: "quicksand";
+    border-bottom: 10px solid #FB8500;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.message h2 {
+    display: flex;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 250px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 430px;
+    height: 50px;
+    font-family: "orbitron";
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 850px 100px 100px 100px;
+    width: 100%;
 }
 
 footer p {
-    text-align: center;
-    margin-left: 100px;
+    color: black;
+    margin: 20px;
     grid-column: 1/2;
+    font-family: "orbitron";
 }
 
 footer img {
     padding: 10px;
-    width: 40px;
+    width: 45px;
     display: flex;
     grid-column: 2/3;
+    justify-content: right;
+    margin-left: 500px;
 }
 
 .front {
     padding: 0;
     color: black;
     width: 1040px;
-    height: 450px;
-    background-image: url("https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting13_1024.jpg");
+    height: auto;
     border: 2px solid black;
 }
 
 .front h1 {
-    color: var(--accent1-color);
-    display: flex;
+    color: black;
+    font-size: 40px;
     width: 400px;
     text-align: center;
     align-content: center;
@@ -215,24 +422,23 @@ footer img {
 .contact {
     display: grid;
     grid-template-columns: 400px 400px;
-    width: 1020px;
-    border: 2px solid black;
-    padding: 10px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 h2 {
     color: var(--accent1-color);
+    font-family: orbitron;
 }
 
 .employees {
     display: grid;
-    grid-template-columns: repeat(3, 190px);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 50px 300px;
-    padding: 0;
-    border: 2px solid var(--secondary-color);
     justify-content: center;
+    padding: 50px;
 }
 
 .employees h2 {
@@ -240,9 +446,29 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: orbitron;
+    color: var(--accent1-color);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Signika&display=swap');
+.staff-fig {
+    margin: 20px;
+    margin: 15px;
+    text-align: center;
+
+}
+
+.employees img {
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    width: 200px;
+}
+
+.employees figcaption {
+    font-family: "quicksand";
+    font-size: 20px;
+    text-align: center;
+
+}
 
 main .box {
     display: flex;
@@ -252,7 +478,8 @@ main .box {
     height: 50px;
     border: 1px solid black;
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 10px;
+
 }
 
 .box p {
@@ -261,35 +488,37 @@ main .box {
 }
 
 .quiz {
+    margin-top: 100px;
     display: flex;
-    width: 510px;
-    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.form-contact {
+    background-color: rgba(255, 255, 255, 0.308);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
     padding: 15px;
-    border: 2px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 190px;
+
 }
+
+
 .quiz h1 {
-    text-align: center;
-}
-
-
-h1 {
-    font-family: sans-serif;
-    font-size: 25px;
-    color: black;
-    padding-left: 25px;
+    color: var(--accent1-color);
+    font-family: orbitron;
 }
 
 label {
     font-size: 20px;
+    font-family: "quicksand";
 }
 
 input {
     width: 500px;
     height: 28px;
     font-size: 20px;
+    font-family: "quicksand";
 }
 
 select,
@@ -297,26 +526,209 @@ option {
     width: 500px;
     height: 28px;
     font-size: 20px;
+    font-family: "quicksand";
 }
 
+fieldset {
+    width: 420px;
+    align-content: center;
+}
+legend {
+    font-family: "quicksand";
+}
 button {
     background-color: var(--accent1-color);
-    font-size: 25px;
-    width: 507px;
+    font-size: 23px;
+    width: 150px;
     height: 50px;
+    border-radius: 10px;
+    color: black;
+    font-family: "orbitron";
 }
+
+button:hover {
+    background-color: var(--accent2-color);
+}
+
 input.little-box {
     width: 22px;
-    
+    border-radius: 10px;
 }
+
 textarea {
     width: 500px;
     height: 80px;
     font-size: 25px;
 }
+
 legend {
     font-size: 20px;
 }
+
 input.radios {
     width: 20px;
+}
+
+/* Fondo Trips */
+.fondo-trips {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.fondo-trips img {
+    display: flex;
+    width: 100%;
+}
+
+.fondo-trips h1 {
+    display: flex;
+    position: absolute;
+    color: black;
+    font-family: "orbitron";
+    margin-top: 100px;
+    font-size: 65px;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+}
+
+/* TRIPS PAGE */
+.description-part {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+}
+
+div.parts {
+    background-color: white;
+    margin: 30px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    justify-self: center;
+    margin-top: 150px;
+    margin-bottom: 130px;
+    border-radius: 10px;
+    border-top: 5px solid var(--accent1-color);
+
+}
+
+.description-part img {
+    display: flex;
+    width: 300px;
+}
+
+/* CONTACT SQUARE */
+div.contact-square {
+    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 700px;
+}
+
+.contact-square a {
+    color: black;
+    background-color: var(--accent1-color);
+    text-decoration: none;
+    font-size: 29px;
+    text-align: center;
+    font-family: "orbitron";
+    padding: 8px;
+    border-radius: 0 10px 10px 0px;
+}
+
+.contact-square a:hover {
+    background-color: #FB8500;
+}
+
+.contact-square h2 {
+    text-align: center;
+    font-family: "quicksand";
+    background-color: #023047;
+    padding: 10px;
+    border-radius: 10px 0px 00px 10px;
+    color: var(--accent1-color);
+}
+
+.trips-available {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(245, 245, 245, 0.705);
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+
+}
+
+.trip-note {
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+
+}
+
+div.trips {
+    background-color: #ffb8032a;
+    border-radius: 10px;
+    width: 300px;
+    justify-self: center;
+    font-family: "quicksand";
+    border-bottom: 5px solid #FFB703;
+}
+
+.trips img {
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.trips h3,
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/* FOOTER HOME*/
+.home-foot {
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 850px 100px 100px 100px;
+    width: 100%;
+}
+
+.home-foot p {
+    color: black;
+    margin: 20px;
+    grid-column: 1/2;
+    font-family: "orbitron";
+}
+
+.home-foot img {
+    padding: 10px;
+    width: 45px;
+    display: flex;
+    grid-column: 2/3;
+    justify-content: right;
+    margin-left: 500px;
+}
+.wireframe {
+    color: black;
+    text-decoration: none;
+    font-family: "orbitron";
+    font-size: 20px;
+    margin-left: 26px;
 }
